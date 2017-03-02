@@ -1,0 +1,28 @@
+{
+  "plugins": [
+    "syntax-async-functions",
+    "transform-exponentiation-operator",
+    "transform-object-rest-spread",
+    "syntax-trailing-function-commas",
+    "syntax-dynamic-import",
+    "transform-class-properties",
+    "transform-decorators",
+    "transform-export-extensions",
+    ["fast-async", {
+      "useRuntimeModule": true
+    }]
+  ],
+  "presets": [
+    "react",
+    ["env", {
+      "exclude": [
+        "transform-regenerator",
+        "transform-async-to-generator"
+      ],
+      "useBuiltIns": true,
+      "targets": {
+        "node": 4.3
+      }
+    }]
+  ]
+}
